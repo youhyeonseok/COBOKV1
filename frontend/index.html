@@ -8,7 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            // $('.coin_news_items').css('color', 'red');
+            numbers = $('#numbers');
+            for(var i = 1;i<10;i++){
+                numbers.append('<li><a href = "">' + i +'</a></li>');
+            }
+        })
+    </script>
 </head>
 <body>
     <div class="nav">
@@ -30,6 +40,22 @@
             <a href="https://twitter.com/?lang=ko">
                 <img class = "nav_icon" src="static/twiterimg.png" alt="">
             </a>
+        </div>
+    </div>
+    <div class = "container">
+        <div class="coin_news">
+            <div class="pagination">
+                <ol id = "numbers">
+                    
+                </ol>
+            </div>
+            <ul>
+                <li class = "coin_news_items"><a href = "">contents</a></li>
+                <li class = "coin_news_items"><a href = "">contents</a></li>
+                <li class = "coin_news_items"><a href = "">contents</a></li>
+                <li class = "coin_news_items"><a href = "">contents</a></li>
+                <li class = "coin_news_items"><a href = "">contents</a></li>
+            </ul>
         </div>
     </div>
 </body>
